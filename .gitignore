@@ -127,9 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-#ignored directory
-engine/model/
-engine/input/
-results/
-uploads/
