@@ -1,0 +1,33 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Gocchii : Auto MM Processor{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h4 class="input">Select File</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <form class="form-group" method="post" enctype="multipart/form-data">
+                <div class="col-md-10">
+                    {{ uploadFileForm.hidden_tag() }}
+                    {{ uploadFileForm.file }}
+                </div>
+
+                <div class="col-md-2">
+                    <div class="span-1">
+                        <input class="input" type="submit" onclick="$('#loading').show();">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div id="loading" style="display:none;"><img src="{{url_for('.static', filename='gif/loading.gif')}}"
+                alt="" />Loading!</div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Success{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h4> Processed Successfully </h4>
+    </div>
+    <div class="row">
+        <a href="{{url_for('uf_bp.downloadResult', secure_filename=secure_filename)}}" class="btn btn-primary">Download File</a>
+    </div>
+</div>
+{% endblock %}
