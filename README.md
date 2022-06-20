@@ -1,6 +1,4 @@
-# Gocchii_NLP
-Project Mars
-
+#NLP-DEMO-APP
 
 # INSTALL INSTRUCTIONS
 1. Install anaconda
